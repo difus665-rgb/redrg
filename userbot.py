@@ -17,7 +17,7 @@ api_hash = 'e99f81094e0192132ffa22cc5026ecac' # api_hash с сайта my.telegr
 token = '8826935255:AAGTIjkLd-X3iFEWshkRC_Gsb71bWvT2ZLg' # токен бота (@BotFather), куда будут приходить уведомления
 
 client = TelegramClient('ub', api_id, api_hash)
-bot = telebot.TeleBot(token) # Исправлена переменная инициализации
+bot = telebot.TeleBot(token)
 
 conn = sqlite3.connect('userbot.db', check_same_thread=False)
 cursor = conn.cursor()
@@ -406,7 +406,7 @@ def run_bot():
         try:
             bot.polling(none_stop=True, timeout=30)
         except Exception as e:
-       [cite: 2]    print(f"Bot polling error: {e}")
+            print(f"Bot polling error: {e}")
             import time
             time.sleep(5)
 
