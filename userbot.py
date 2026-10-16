@@ -12,9 +12,9 @@ from flask import Flask
 
 nest_asyncio.apply()
 
-api_id = 1234567 # api_id с сайта my.telegram.org
-api_hash = '1' # api_hash с сайта my.telegram.org
-token = '1' # токен бота (@BotFather), куда будут приходить уведомления
+api_id = 39919027 # api_id с сайта my.telegram.org
+api_hash = 'e99f81094e0192132ffa22cc5026ecac' # api_hash с сайта my.telegram.org
+token = '8826935255:AAGTIjkLd-X3iFEWshkRC_Gsb71bWvT2ZLg' # токен бота (@BotFather), куда будут приходить уведомления
 
 client = TelegramClient('ub', api_id, api_hash)
 bot = telebot.TeleBot(token) # Исправлена переменная инициализации
