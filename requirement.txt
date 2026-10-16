@@ -1,0 +1,5 @@
+telethon
+pytelegrambotapi
+nest-asyncio
+flask
+gunicorn
